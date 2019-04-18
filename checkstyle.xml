@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<module name="Checker">
+    <property name="charset" value="UTF-8"/>
+    <property name="severity" value="error"/>
+    <module name="TreeWalker">
+        <module name="FileContentsHolder"/>
+        <module name="SuppressWarningsHolder"/>
+        <module name="MissingDeprecated"/>
+        <module name="MissingOverride"/>
+        <module name="AvoidStarImport"/>
+        <module name="IllegalImport"/>
+        <module name="RedundantImport"/>
+        <module name="UnusedImports"/>
+        <module name="ModifierOrder"/>
+        <module name="RedundantModifier"/>
+        <module name="NeedBraces"/>
+        <module name="CovariantEquals"/>
+        <module name="DefaultComesLast"/>
+        <module name="DeclarationOrder"/>
+        <module name="EqualsAvoidNull"/>
+        <module name="IllegalCatch"/>
+        <module name="IllegalThrows"/>
+        <module name="BooleanExpressionComplexity"/>
+        <module name="ClassDataAbstractionCoupling"/>
+        <module name="ClassFanOutComplexity"/>
+        <module name="JavaNCSS"/>
+        <module name="ConstantName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+        <module name="MethodName"/>
+        <module name="PackageName"/>
+        <module name="ParameterName"/>
+        <module name="StaticVariableName"/>
+        <module name="LineLength">
+            <property name="max" value="120"/>
+            <property name="tabWidth" value="4"/>
+        </module>
+        <module name="MethodLength"/>
+        <module name="ParameterNumber"/>
+        <module name="MethodCount"/>
+        <module name="ExecutableStatementCount">
+            <property name="tokens" value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF"/>
+        </module>
+        <module name="AnonInnerLength"/>
+    </module>
+    <module name="FileLength">
+        <property name="severity" value="error"/>
+    </module>
+    <module name="SuppressWithNearbyCommentFilter"/><!-- // SUPPRESS CHECKSTYLE (\w+) -->
+    <module name="SuppressWarningsFilter"/><!-- @SuppressWarnings("Rule Name") -->
+    <module name="SuppressionCommentFilter"/><!-- // CHECKSTYLE:OFF ... // CHECKSTYLE:ON -->
+</module>
